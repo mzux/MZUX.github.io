@@ -12,7 +12,7 @@ body,
 input,
 textarea {
   color: #191919;
-  font: 14px/140% 'Open Sans', Arial, sans-serif;
+  font: 14px/140% 'Spoqa Han Sans Neo','Open Sans', Arial, sans-serif;
 }
 
 a {
@@ -42,7 +42,7 @@ code {
 #sidebar {
   background: #191919;
   color: #fff;
-  float: left;  
+  float: left;
   height: 100%;
   overflow: auto;
   position: fixed;
@@ -129,7 +129,7 @@ code {
 }
 
 #content article > a {
-  background: #333;
+  background: #fff;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

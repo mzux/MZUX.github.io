@@ -412,7 +412,7 @@ body,
 input,
 textarea {
   color: #191919;
-  font: 14px/140% 'Open Sans', Arial, sans-serif;
+  font: 16px/140% 'Spoqa Han Sans Neo Thin','Open Sans', Arial, sans-serif;
 }
 
 a {
@@ -421,7 +421,7 @@ a {
 }
 a:hover {
   color: #29aeef;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1,
@@ -442,16 +442,19 @@ code {
 #sidebar {
   background: #191919;
   color: #fff;
-  float: left;  
+  float: left;
   height: 100%;
   overflow: auto;
   position: absolute;
   top: 0;
-  width: 240px;
+  width: 20%;
+  min-width: 200px;
+  max-width: 260px;
 }
 
 #sidebar h1 {
   background: #111;
+  color: #fff;
   font-size: 14px;
   margin: 0;
   padding: 20px;
@@ -513,7 +516,7 @@ code {
 /* References */
 #content {
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 20%;
   max-width: 700px;
 }
 
@@ -529,21 +532,22 @@ code {
 }
 
 #content article > a {
-  background: #333;
+  background: #fff;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   cursor: pointer;
   display: block;
   padding: 15px;
+  color: #000;
 }
 #content article > a:hover {
   background: #222;
   text-decoration: none;
+  color: #fff;
 }
 
 #content a h2 {
-  color: #fff;
   font-size: 18px;
   font-weight: normal;
   margin: 0;

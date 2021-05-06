@@ -23,6 +23,9 @@ summary {
     display: block;
 }
 
+/* 드래그 색상 변경 */
+::selection { color:black; background:#FFFF5A; }
+
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
@@ -76,6 +79,7 @@ body {
     min-width: 960px;
 }
 
+
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -85,7 +89,7 @@ body {
  */
 
 a:focus {
-    outline: thin dotted;
+    outline: none;
 }
 
 /**
@@ -516,7 +520,7 @@ code {
 /* References */
 #content {
   padding: 20px;
-  padding-left: 20%;
+  padding-left: min(250px, 20%); /*비율로 줄어들지만 한계값 제한*/
   max-width: 700px;
 }
 
@@ -631,18 +635,20 @@ code {
   width: 100%;
 }
 
+/* 노션 스타일 코드 */
 #content .body code {
-  border: 1px solid #e2e7ea;
+  border: 0px;
   background: #eef1f2;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  color: #546974;
-  padding: 0 1px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #EB5757;
+  font-size: 85%;
+  padding: 0.2em 0.4em;
 }
 
+/* 코드가 문장 안에 표시되도록 변경 */
 #content .body p > code {
-  display: block;
-  padding: 15px;
+  display: inline;
   white-space: pre;
 }

@@ -12,7 +12,7 @@ body,
 input,
 textarea {
   color: #191919;
-  font: 14px/140% 'Spoqa Han Sans Neo','Open Sans', Arial, sans-serif;
+  font: 14px/140% 'Noto Sans KR', Arial, sans-serif;
 }
 
 a {
@@ -30,9 +30,11 @@ h3,
 h4,
 p,
 ul,
+
 code {
   margin: 0 0 20px;
 }
+
 
 code {
   font-family: 'Monaco', monospace, sans-serif;
@@ -234,7 +236,7 @@ code {
 }
 
 #content .body p > code {
-  display: block;
-  padding: 15px;
+  display: inline;
+  padding: 2px;
   white-space: pre;
 }

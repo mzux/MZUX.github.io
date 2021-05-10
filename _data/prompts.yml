@@ -1,7 +1,0 @@
-music:  #카테고리
-  music:  #세부 카테고리
-    play_music:  #사용자 의도
-      command: "음악 틀어줘" #대표 명령어
-        googleassistant: "구글이 음악을 재생합니다"
-        siri: "시리가 음악을 재생합니다"
-        heykakao: "카카오가 음악을 재생합니다"

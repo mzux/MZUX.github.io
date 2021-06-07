@@ -1,20 +1,52 @@
-# 이 페이지의 제목은 {{page.title}} 입니다.
+{% unless page.agents.nugu == false %}
+  <h2>SKT NUGU</h2>
+  "{{ page.agents.nugu }}"
+  {%- if page.agents.img_nugu == true -%}
+    <img src="{{ page.agents.dir }}nugu.jpg" alt="NUGU-{{ page.agents.img_nugu }}">
+  {%- endif -%}
+{% endunless %}
 
-## Google Assistant
-구글 이미지 asset/...jpg>
-![Google Assistant](assets/img/google-assistant-cover.jpg)
-구글이미지
-![]({page.img_google})
-"{{page.google}}"
+{% unless page.agents.gigagenie == false %}
+  <h2>GIGA Genie</h2>
+  "{{ page.agents.gigagenie }}"
+  {%- if page.agents.img_gigagenie == true -%}
+    <img src="{{ page.agents.dir }}gigagenie.jpg" alt="GiGAGenie-{{ page.agents.img_gigagenie }}">
+  {%- endif -%}
+{% endunless %}
 
-`{{ page.google | number_of_words }} 단어 입니다.`
+{% unless page.agents.clova == false %}
+  <h2>Clova</h2>
+  "{{ page.agents.clova }}"
+  {%- if page.agents.img_clova == true -%}
+    <img src="{{ page.agents.dir }}clova.jpg" alt="클로바-{{ page.agents.img_clova }}">
+  {%- endif -%}
+{% endunless %}
 
-## Hey Kakao
-"{{page.kakao}}"
+{% unless page.agents.kakaoi == false %}
+  <h2>Kakao i</h2>
+  "{{ page.agents.kakaoi }}"
+  {%- if page.agents.img_kakaoi == true -%}
+    <img src="{{ page.agents.dir }}kakaoi.jpg" alt="Kakao i-{{ page.agents.kakaoi }}">
+  {%- endif -%}
+{% endunless %}
 
-`{{ page.kakao | number_of_words }} 단어 입니다.`
+{% unless page.agents.google == false %}
+  <h2>Google Assistant</h2>
+  "{{ page.agents.google }}"
+  {%- if page.agents.img_google == true -%}
+    <img src="{{ page.agents.dir }}google.jpg" alt="Google Assistant-{{ page.agents.google }}">
+  {%- endif -%}
+{% endunless %}
 
-## Siri
-"{{page.siri}}"
+{% unless page.agents.siri == false %}
+  <h2>Siri</h2>
+  "{{ page.agents.siri }}"
+  {%- if page.agents.img_siri == true -%}
+    <img src="{{ page.agents.dir }}siri.jpg" alt="Siri-{{ page.agents.siri }}">
+  {%- endif -%}
+{% endunless %}
 
-`{{ page.siri | number_of_words }} 단어 입니다.`
+<h2>test area</h2>
+{% for item in page.agents %}
+  {{ item.said }}
+{% endfor %}

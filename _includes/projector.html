@@ -1,52 +1,47 @@
-{% unless page.agents.nugu == false %}
+{% unless page.nugu == false %}
   <h2>SKT NUGU</h2>
-  "{{ page.agents.nugu }}"
-  {%- if page.agents.img_nugu == true -%}
-    <img src="{{ page.agents.dir }}nugu.jpg" alt="NUGU-{{ page.agents.img_nugu }}">
+  "{{ page.nugu }}"
+  {%- if page.img.nugu == true -%}
+    <img src="{{ page.dir }}nugu.jpg" alt="NUGU-{{ page.nugu }}">
   {%- endif -%}
 {% endunless %}
 
-{% unless page.agents.gigagenie == false %}
+{% unless page.gigagenie == false %}
   <h2>GIGA Genie</h2>
-  "{{ page.agents.gigagenie }}"
-  {%- if page.agents.img_gigagenie == true -%}
-    <img src="{{ page.agents.dir }}gigagenie.jpg" alt="GiGAGenie-{{ page.agents.img_gigagenie }}">
+  "{{ page.gigagenie }}"
+  {%- if page.img.gigagenie == true -%}
+    <img src="{{ page.dir }}gigagenie.jpg" alt="GiGAGenie-{{ page.gigagenie }}">
   {%- endif -%}
 {% endunless %}
 
-{% unless page.agents.clova == false %}
+{% unless page.clova == false %}
   <h2>Clova</h2>
-  "{{ page.agents.clova }}"
-  {%- if page.agents.img_clova == true -%}
-    <img src="{{ page.agents.dir }}clova.jpg" alt="클로바-{{ page.agents.img_clova }}">
+  "{{ page.clova }}"
+  {%- if page.img.clova == true -%}
+    <img src="{{ page.dir }}clova.jpg" alt="클로바-{{ page.clova }}">
   {%- endif -%}
 {% endunless %}
 
-{% unless page.agents.kakaoi == false %}
+{% unless page.kakaoi == false %}
   <h2>Kakao i</h2>
-  "{{ page.agents.kakaoi }}"
-  {%- if page.agents.img_kakaoi == true -%}
-    <img src="{{ page.agents.dir }}kakaoi.jpg" alt="Kakao i-{{ page.agents.kakaoi }}">
+  "{{ page.kakaoi }}"
+  {%- if page.img.kakaoi == true -%}
+    <img src="{{ page.dir }}kakaoi.jpg" alt="Kakao i-{{ page.kakaoi }}">
   {%- endif -%}
 {% endunless %}
 
-{% unless page.agents.google == false %}
+{% unless page.google == false %}
   <h2>Google Assistant</h2>
-  "{{ page.agents.google }}"
-  {%- if page.agents.img_google == true -%}
-    <img src="{{ page.agents.dir }}google.jpg" alt="Google Assistant-{{ page.agents.google }}">
+  "{{ page.google }}"
+  {%- if page.img.google == true -%}
+    <img src="{{ page.dir }}google.jpg" alt="Google Assistant-{{ page.google }}">
   {%- endif -%}
 {% endunless %}
 
-{% unless page.agents.siri == false %}
+{% unless page.siri == false %}
   <h2>Siri</h2>
-  "{{ page.agents.siri }}"
-  {%- if page.agents.img_siri == true -%}
-    <img src="{{ page.agents.dir }}siri.jpg" alt="Siri-{{ page.agents.siri }}">
+  "{{ page.siri }}"
+  {%- if page.img.siri == true -%}
+    <img src="{{ page.dir }}siri.jpg" alt="Siri-{{ page.siri }}">
   {%- endif -%}
 {% endunless %}
-
-<h2>test area</h2>
-{% for item in page.agents %}
-  {{ item.said }}
-{% endfor %}

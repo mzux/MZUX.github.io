@@ -1,12 +1,37 @@
 ---
 layout: post
+title: "My example post?"
+categories: misc
+last_modified_at: 2021-05-25
+agents:
+- nugu: SKT NUGU
+  its:
+  - said: SKT 누구는 날씨를 알고 있습니다.
+  - img: false
+- gigagenie:
+  said: false
+  img: false
+- clova:
+  said: 클로바가 오늘의 날씨를 알려드립니다.
+  img: false
+- kakaoi:
+  said: 오늘 최고기온은 16도, 최저기온은 9도 입니다.
+  img: false
+- google: Google
+  said: It's google sky.
+  img: true
+- siri:
+  said: What a Siri day.
+  img: false
 ---
 
-Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.
+<h2>test area</h2>
 
-{% comment %}
-Might you have an include in your theme? Why not try it here!
-{% include my-themes-great-include.html %}
-{% endcomment %}
+{% for item in page.agents %}
 
-No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.
+    <h2>{{ item }}</h2>
+
+{% endfor %}
+
+<br>
+{{ page.agents.dir }}

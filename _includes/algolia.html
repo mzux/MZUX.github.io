@@ -59,86 +59,86 @@ search.addWidget(
 search.start();
 </script>
 
-<style>
-#search-searchbar {
-  margin: 8em 0;
-}
+<style media="screen">
+  .ais-search-box {
+    max-width: 100%;
+    height: auto;
 
-.ais-search-box {
-  max-width: 100%;
-  height: auto;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    background: #fdfdfd;
 
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  background: #fdfdfd;
-}
-.ais-search-box--input {
-  border-radius: 0px;
-  border: solid #000;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 90px;
+    padding-left: 0px;
+  }
+  .ais-search-box--input {
+    border-radius: 0px;
+    border: solid #000;
+      border-top-width: 0px;
+      border-right-width: 0px;
+      border-bottom-width: 1px;
+      border-left-width: 0px;
 
-  height: auto;
-  padding-left: 1.5em;
+    height: auto;
+    padding: 0px 1.5em 0px;
 
-  font-size: 3em;
-  font-weight: 300;
+    font-size: 3em;
+    font-weight: 100;
 
-  background: #fdfdfd;
-}
+    background: #fdfdfd;
+  }
 
-.ais-search-box--magnifier {
-  fill: #111;
-  left: 2em;
-  top: calc(50% - 18px);
-}
+  .ais-search-box--magnifier {
+    fill: #111;
+    top: calc(50% - 70px);
+  }
 
-.ais-search-box--magnifier svg {
-  width: 24px;
-  height: 24px;
-}
+    .ais-search-box--magnifier svg {
+    width: 2.4em;
+    height: 2.4em;
+  }
 
-.ais-search-box--reset{
-  fill: #111;
-  right: 2em;
-  top: calc(50% - 18px);
-}
+  .ais-search-box--reset{
+    fill: #111;
+    right: 2em;
+    top: calc(50% - 60px);
+  }
 
-.ais-search-box--reset svg {
+  .ais-search-box--reset svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+  }
+
+  .post-item {
+    margin-bottom: 30px;
+  }
+  .post-link .ais-Highlight {
+    color: #111;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  .post-breadcrumbs {
+    color: #424242;
     display: block;
-    width: 24px;
-    height: 24px;
-}
-
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.post-snippet img {
-  display: none;
-}
+  }
+  .post-breadcrumb {
+    font-size: 18px;
+    color: #424242;
+  }
+  .post-breadcrumb .ais-Highlight {
+    font-weight: bold;
+    font-style: normal;
+  }
+  .post-snippet .ais-Highlight {
+    color: #2a7ae2;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .post-snippet img {
+    display: none;
+  }
 </style>
